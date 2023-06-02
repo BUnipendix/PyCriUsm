@@ -1,5 +1,5 @@
 # PyCriUsm
-a python library to decrypt and demux Honkai: Star Rail cutscene video. In theory, it can demux any of the encrypted Usm file. But I only adapted to HSR..
+a python library to decrypt and demux HSR cutscene video. In theory, it can demux any of the encrypted Usm file. But I only adapted to HSR..
 
 The decryption module was written in cython so that we can achieve a speed 5 to 7 times faster than WannaCRI and nearly as fast as GI-Cutscene.
 
@@ -23,6 +23,6 @@ def extract_video(video_path, output_dir):
 ## Roadmap
 
 - [x] USM decryption support
-- [ ] HCA decryption support
+- [ ] HCA decryption support(Used by GI)
 - [ ] More flexable and powerful option to control usm chunks
 
