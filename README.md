@@ -3,7 +3,7 @@ a python script to decrypt and demux Honkai: Star Rail cutscene video. In theory
 
 The decryption module was written in cython so that we can achieve a speed 5 to 7 times faster than WannaCRI and nearly as fast as GI-Cutscene.
 
-Refer to WannaCRI and GI-Cutscene
+Refer to [WannaCRI](https://github.com/donmai-me/WannaCRI) and [GI-Cutscene](https://github.com/ToaHartor/GI-cutscenes)
 
 ## Build Cython code
 
