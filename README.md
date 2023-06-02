@@ -7,10 +7,6 @@ Refer to WannaCRI and GI-Cutscene
 
 ## Build Cython code
 
-Install Cython first
-
-```pip install Cython```
-
 Enter the repository and run this command
 
 ```python setup.py build_ext --inplace```
