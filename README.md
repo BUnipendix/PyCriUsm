@@ -14,10 +14,10 @@ Enter the repository and run this command
 ## Example
 
 ```	
-def extract_video(video_path, output_dir, key1, key2):
-	a = UsmDemuxer(video_path, key, True)
-	video_name, audio_names = a.export(output_dir)
-	return video_name, audio_names
+def extract_video(video_path, output_dir):
+    a = UsmDemuxer(video_path)
+    video_name, audio_names = a.export(output_dir)
+    return video_name, audio_names
 ```
 
 ## Roadmap
