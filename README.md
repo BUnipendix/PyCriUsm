@@ -11,6 +11,8 @@ Enter the repository and run this command
 
 ```python setup.py build_ext --inplace```
 
+Move decrypt.xxx.[so|pyd] fils to cri_usm_demuxer folder
+
 ## Example
 
 ```	

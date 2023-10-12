@@ -1,19 +1,24 @@
 from io import FileIO, BytesIO
-from os.path import basename, splitext
 from pathlib import Path
-from importlib import import_module
 from enum import Enum
 from struct import Struct
 from dataclasses import dataclass
 from logging import getLogger
 from queue import SimpleQueue
 from concurrent.futures import ThreadPoolExecutor
-from .keys import star_rail
 from .decrypt import VideoDecrypter
 pool = ThreadPoolExecutor()
-_key_collection = {}
 logger = getLogger('CriUsmDemuxer.Demuxer')
 _usm_header_struct = Struct(r'>4sLxBHBxxBLL8x')
+
+
+def _load_keys():
+	import json
+	with (Path(__file__).parent / 'keys.json').open('rb') as f:
+		return json.load(f)
+
+
+keys = _load_keys()
 
 
 # copy from wannacri
@@ -64,10 +69,18 @@ class UsmHeader:
 
 class UsmDemuxer:
 	def __init__(self, video_path):
-		self._name = splitext(basename(video_path))[0]
-		encrypted_audio, key_map = star_rail
-		key = key_map.get(self._name, 0)
-		self._f = UsmFile(video_path)
+		video_path = Path(video_path)
+		self._name = video_path.stem
+		key = 0
+		encrypted_audio = False
+		for i in keys.values():
+			tmp_encrypted_audio, key_map = i['Encrytion'], i['KeyMap']
+			tmp_key = key_map.get(video_path.stem, None)
+			if tmp_key:
+				encrypted_audio = tmp_encrypted_audio
+				key = tmp_key
+				break
+		self._f = UsmFile(str(video_path))
 		self._usm_decrypter = None
 		self._thread_ref_total = 1
 		if key:
