@@ -87,7 +87,7 @@ class UsmDemuxer:
 			key2 = key >> 32
 			key1 = key & 0xffffffff
 			self._usm_decrypter = VideoDecrypter(key1, key2)
-			if encrypted_audio:
+			if encrypted_audio == 1:
 				self._thread_ref_total = 2
 
 	def export(self, output_path: str, chunk_filter_config=None):

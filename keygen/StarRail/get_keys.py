@@ -1,10 +1,10 @@
-from dataclasses_json import dataclass_json
+from dataclasses_json import dataclass_json, LetterCase
 from dataclasses import dataclass
 import json
 from pathlib import Path
 
 
-@dataclass_json
+@dataclass_json(letter_case=LetterCase.CAMEL)
 @dataclass
 class VideoConfigRow:
 	video_id: int = 0
