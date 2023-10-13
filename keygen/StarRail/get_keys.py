@@ -9,7 +9,7 @@ from pathlib import Path
 class VideoConfigRow:
 	video_id: int = 0
 	video_path: str = ''
-	is_player_involve: bool = False
+	is_player_involved: bool = False
 	caption_path: str = ''
 	encryption: bool = False
 
@@ -51,7 +51,7 @@ def get_keys():
 			Warning(f'Could not find {i.video_path} key')
 			continue
 		names = i.video_path.removesuffix('.usm')
-		if i.is_player_involve:
+		if i.is_player_involved:
 			names = (names + '_f', names + '_m')
 		else:
 			names = (names,)
