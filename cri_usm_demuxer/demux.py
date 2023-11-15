@@ -14,7 +14,7 @@ _usm_header_struct = Struct(r'>4sLxBHBxxBLL8x')
 
 def _load_keys():
 	import json
-	with (Path(__file__).parent / 'keys.json').open('rb') as f:
+	with (Path(__file__).parent / 'keys_old.json').open('rb') as f:
 		return json.load(f)
 
 
