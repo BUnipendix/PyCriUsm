@@ -2,6 +2,7 @@ from io import FileIO, BytesIO
 from pathlib import Path
 from enum import Enum
 from struct import Struct
+from collections import ChainMap
 from dataclasses import dataclass
 from logging import getLogger
 from queue import SimpleQueue
@@ -14,7 +15,7 @@ _usm_header_struct = Struct(r'>4sLxBHBxxBLL8x')
 
 def _load_keys():
 	import json
-	with (Path(__file__).parent / 'keys_old.json').open('rb') as f:
+	with (Path(__file__).parent / 'keys.json').open('rb') as f:
 		return json.load(f)
 
 
@@ -74,7 +75,7 @@ class UsmDemuxer:
 		key = 0
 		encrypted_audio = False
 		for i in keys.values():
-			tmp_encrypted_audio, key_map = i['Encrytion'], i['KeyMap']
+			tmp_encrypted_audio, key_map = i['Encrytion'], ChainMap(*i['KeyMap'].values())
 			tmp_key = key_map.get(video_path.stem, None)
 			if tmp_key:
 				encrypted_audio = tmp_encrypted_audio

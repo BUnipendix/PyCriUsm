@@ -26,10 +26,10 @@ def get_keys():
 	root = Path(__file__).parent
 	loaded_key = set()
 	all_keys = {}
-	for a in root.iterdir():
-		if a.is_file():
+	for sub_root in root.iterdir():
+		if sub_root.is_file() or sub_root.name[0].isdigit() is False:
 			continue
-		with open(root / 'GetVideoVersionKeyScRsp.json') as f:
+		with open(sub_root / 'GetVideoVersionKeyScRsp.json') as f:
 			data = tuple(json.load(f).values())
 		data = data[0]
 		tmp_keys = {}
@@ -43,7 +43,7 @@ def get_keys():
 					tmp_keys[key1] = key2
 
 		keys = {}
-		with open(root / 'VideoConfig.json') as f:
+		with open(sub_root / 'VideoConfig.json') as f:
 			data = json.load(f)
 		if isinstance(data, dict):
 			data = data.values()
@@ -68,6 +68,6 @@ def get_keys():
 					continue
 				key = _get_hsr_decrypt_key(name, version_key)
 				keys[name] = key
-		all_keys[a.name] = keys
+		all_keys[sub_root.name] = keys
 	return 1, all_keys
 
