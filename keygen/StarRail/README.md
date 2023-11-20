@@ -2,4 +2,4 @@
 
 **VideoConfig** can extract from design data or get from [dim's repo](https://github.com/Dimbreath/StarRailData)
 
-Very thanks Tart for providing GetVideoVersiobKeyScRsp packet data
+Many thanks to Tart for providing GetVideoVersiobKeyScRsp packet data
