@@ -5,6 +5,8 @@ import json
 def import_helper(path):
 	from importlib.util import spec_from_file_location, module_from_spec
 	path = path / "get_keys.py"
+	if path.is_file() is False:
+		return
 	spec = spec_from_file_location("get_keys", str(path))
 	if spec is None:
 		Warning(f'Could not find {path.parent.name}\'s keygen module')
