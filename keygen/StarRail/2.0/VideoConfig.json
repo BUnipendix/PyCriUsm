@@ -1,0 +1,592 @@
+[
+  {
+    "video_id": 1,
+    "video_path": "CS_Chap01_Act010.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act010_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2,
+    "video_path": "CS_Chap01_Act020.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act020_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 3,
+    "video_path": "CS_Chap01_Act110.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act110_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 4,
+    "video_path": "CS_Chap01_Act120.usm",
+    "is_player_involved": true,
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 5,
+    "video_path": "CS_Chap01_Act130.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act130_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 7,
+    "video_path": "CS_Chap01_Act150.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act150_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 8,
+    "video_path": "CS_Chap00_Act210.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act210_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 16,
+    "video_path": "CS_Chap00_Act270.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act270_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 21,
+    "video_path": "CS_Chap00_Act300.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act300_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 100,
+    "video_path": "CS_Chap01_Act3010.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act3010_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 101,
+    "video_path": "CS_Chap01_Act3020.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act3020_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 102,
+    "video_path": "CS_Chap01_Act3030.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act3030_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 310,
+    "video_path": "CS_Chap00_Act310.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act310_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 320,
+    "video_path": "CS_Chap00_Act320.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act320_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 301,
+    "video_path": "CS_Chap00_Act3010.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act3010_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 302,
+    "video_path": "CS_Chap00_Act3020.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act3020_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 330,
+    "video_path": "CS_Chap00_Act330.usm",
+    "is_player_involved": true,
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 340,
+    "video_path": "CS_Chap00_Act340.usm",
+    "is_player_involved": true,
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 350,
+    "video_path": "CS_Chap00_Act350.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act350_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 360,
+    "video_path": "CS_Chap00_Act360.usm",
+    "is_player_involved": true,
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 361,
+    "video_path": "CS_Chap00_Act361.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act361_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 370,
+    "video_path": "CS_Chap00_Act370.usm",
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 380,
+    "video_path": "CS_Chap00_Act380.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act380_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 390,
+    "video_path": "CS_Chap00_Act390.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act390_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 400,
+    "video_path": "CS_Chap00_Act400.usm",
+    "is_player_involved": true,
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 410,
+    "video_path": "CS_Chap00_Act410.usm",
+    "is_player_involved": true,
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 411,
+    "video_path": "CS_Chap00_Act411.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act411_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 420,
+    "video_path": "CS_Chap00_Act420.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act420_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 1160,
+    "video_path": "CS_Chap01_Act160.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act160_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 1170,
+    "video_path": "CS_Chap01_Act170.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act170_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 1180,
+    "video_path": "CS_Chap01_Act180.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act180_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 1190,
+    "video_path": "CS_Chap01_Act190.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act190_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 1200,
+    "video_path": "CS_Chap01_Act200.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act200_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 1210,
+    "video_path": "CS_Chap01_Act210.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act210_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 1220,
+    "video_path": "CS_Chap01_Act220.usm",
+    "is_player_involved": true,
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 1221,
+    "video_path": "CS_Chap01_Act221.usm",
+    "is_player_involved": true,
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 1222,
+    "video_path": "CS_Chap01_Act222.usm",
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 1223,
+    "video_path": "CS_Chap01_Act223.usm",
+    "is_player_involved": true,
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 1224,
+    "video_path": "CS_Chap01_Act224.usm",
+    "is_player_involved": true,
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 1230,
+    "video_path": "CS_Chap01_Act230.usm",
+    "is_player_involved": true,
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 1240,
+    "video_path": "CS_Chap01_Act240.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act240_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2302,
+    "video_path": "CS_Chap02_Act3020.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act3020_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 1304,
+    "video_path": "CS_Chap01_Act3040.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act3040_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2420,
+    "video_path": "CS_Chap02_Act420.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act420_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2440,
+    "video_path": "CS_Chap02_Act440.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act440_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2450,
+    "video_path": "CS_Chap02_Act450.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act450_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2460,
+    "video_path": "CS_Chap02_Act460.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act460_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2480,
+    "video_path": "CS_Chap02_Act480.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act480_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2490,
+    "video_path": "CS_Chap02_Act490.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act490_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2530,
+    "video_path": "CS_Chap02_Act530.usm",
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 2550,
+    "video_path": "CS_Chap02_Act550.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act550_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2560,
+    "video_path": "CS_Chap02_Act560.usm",
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 2570,
+    "video_path": "CS_Chap02_Act570.usm",
+    "is_player_involved": true,
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 2580,
+    "video_path": "CS_Chap02_Act580.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act580_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2620,
+    "video_path": "CS_Chap02_Act620.usm",
+    "is_player_involved": true,
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 2630,
+    "video_path": "CS_Chap02_Act630.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act630_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2640,
+    "video_path": "CS_Chap02_Act640.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act640_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2660,
+    "video_path": "CS_Chap02_Act660.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act660_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2670,
+    "video_path": "CS_Chap02_Act670.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act670_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2680,
+    "video_path": "CS_Chap02_Act680.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act680_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2690,
+    "video_path": "CS_Chap02_Act690.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act690_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2700,
+    "video_path": "CS_Chap02_Act700.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act700_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2701,
+    "video_path": "CS_Chap02_Act701.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act701_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2710,
+    "video_path": "CS_Chap02_Act710.usm",
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 2720,
+    "video_path": "CS_Chap02_Act720.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act720_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 2730,
+    "video_path": "CS_Chap02_Act730.usm",
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 2740,
+    "video_path": "CS_Chap02_Act740.usm",
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 2750,
+    "video_path": "CS_Chap02_Act750.usm",
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 2760,
+    "video_path": "CS_Chap02_Act760.usm",
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 3010,
+    "video_path": "CS_Chap03_Act010.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act010_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 3020,
+    "video_path": "CS_Chap03_Act020.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act020_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 3030,
+    "video_path": "CS_Chap03_Act030.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act030_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 3040,
+    "video_path": "CS_Chap03_Act040.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act040_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 3050,
+    "video_path": "CS_Chap03_Act050.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act050_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 3060,
+    "video_path": "CS_Chap03_Act060.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act060_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 3070,
+    "video_path": "CS_Chap03_Act070.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act070_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 3080,
+    "video_path": "CS_Chap03_Act080.usm",
+    "is_player_involved": true,
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 3090,
+    "video_path": "CS_Chap03_Act090.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act090_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 3100,
+    "video_path": "CS_Chap03_Act100.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act100_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 3110,
+    "video_path": "CS_Chap03_Act110.usm",
+    "is_player_involved": true,
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 3120,
+    "video_path": "CS_Chap03_Act120.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act120_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 3130,
+    "video_path": "CS_Chap03_Act130.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act130_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 3140,
+    "video_path": "CS_Chap03_Act140.usm",
+    "caption_path": "",
+    "encryption": true
+  },
+  {
+    "video_id": 3150,
+    "video_path": "CS_Chap03_Act150.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act150_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 3160,
+    "video_path": "CS_Chap03_Act160.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act160_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 3170,
+    "video_path": "CS_Chap03_Act170.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act170_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 3180,
+    "video_path": "CS_Chap03_Act180.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act180_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 3301,
+    "video_path": "CS_Chap03_Act3010.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act3010_Caption.json",
+    "encryption": true
+  },
+  {
+    "video_id": 3302,
+    "video_path": "CS_Chap03_Act3020.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act3020_Caption.json",
+    "encryption": true
+  }
+]
