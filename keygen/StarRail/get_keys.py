@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 
-@dataclass_json(letter_case=LetterCase.CAMEL)
+@dataclass_json(letter_case=LetterCase.PASCAL)
 @dataclass
 class VideoConfigRow:
 	video_id: int = 0

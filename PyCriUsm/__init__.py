@@ -1,7 +1,8 @@
 import logging
+from .demux import extract_usm, demux
 
 
-logger = logging.getLogger('CriUsmDemuxer')
+logger = logging.getLogger('PyCriUsm')
 logger.setLevel(logging.DEBUG)
 
 console_handler = logging.StreamHandler()

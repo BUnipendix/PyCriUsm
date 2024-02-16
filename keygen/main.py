@@ -27,7 +27,7 @@ def main():
 			continue
 		data = get_keys_func()
 		keys[i.name] = {'Encrytion': data[0], 'KeyMap': data[1]}
-	with open(root.parent / 'cri_usm_demuxer' / 'keys.json', 'w') as f:
+	with open(root.parent / 'pycriusm/keys.json', 'w') as f:
 		json.dump(keys, f, ensure_ascii=False, indent='\t')
 
 
