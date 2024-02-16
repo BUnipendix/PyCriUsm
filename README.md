@@ -1,7 +1,7 @@
 # PyCriUsm
 a python library to decrypt and demux HSR cutscene video. In theory, it can demux any of the encrypted Usm file. But I only adapted to HSR..
 
-The decryption module was written in cython so that we can achieve a speed 7x to 10x faster than WannaCRI and 1.4x faster than GI-Cutscene.
+The decryption module was written in cython so that we can achieve a speed 10x to 13x faster than WannaCRI and 1.4x faster than GI-Cutscene.
 
 Refer to [WannaCRI](https://github.com/donmai-me/WannaCRI) and [GI-Cutscene](https://github.com/ToaHartor/GI-cutscenes)
 
