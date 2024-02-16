@@ -14,17 +14,13 @@ def _flat_key_map(keys):
 		i = None
 		for i in data.values():
 			break
-		if i is None:
-			logger.warning('密钥列表格式错误1')
-			breakpoint()
 		if isinstance(i, int):
 			share_dict.update(data)
 		elif isinstance(i, dict):
 			for i in data.values():
 				core(i, share_dict)
 		else:
-			logger.warning('密钥列表格式错误2')
-			breakpoint()
+			raise TypeError('wrong keymap format')
 		return share_dict
 
 	def start_core(data):

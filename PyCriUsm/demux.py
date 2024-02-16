@@ -88,22 +88,19 @@ def demux(video_path, output: Union[str, Path, SimpleQueue], key=0, audio_encryp
 				if max_index is not None:
 					if new_index == max_index:
 						if chunk_cache[1]:
-							breakpoint()
+							ValueError("DEBUG: it seems that receiving is over but there's still some chunk in cache")
 						else:
 							finish_flag = True
 					elif new_index > max_index:
-						print('逻辑有问题')
-						breakpoint()
+						raise ValueError("DEBUG: number of chunks provided seems to be not as same as received")
 			elif index > chunk_cache[0]:
 				chunk_cache[1][index] = data
-			else:
-				raise ValueError('写入排序逻辑有问题')
 			for i in chunk_cache[1]:
 				if i < chunk_cache[0]:
-					breakpoint()
+					raise ValueError("DEBUG:there're some logic problems in write_file")
 
 		logger = getLogger('PyCriUsm.writer')
-		logger.debug(r'进入成功')
+		logger.debug(r'success enter write function')
 		memory_cache = ({}, {})
 		chunk_cache = [0, {}]
 		stream_video_path = None
@@ -118,8 +115,7 @@ def demux(video_path, output: Union[str, Path, SimpleQueue], key=0, audio_encryp
 				if data == chunk_cache[0]:
 					break
 				elif data < chunk_cache[0]:
-					print('逻辑有问题')
-					breakpoint()
+					ValueError("DEBUG: expect chunk index is higher than chunk total number")
 				max_index = data
 				continue
 			if data.is_video and data.chno == 0:
@@ -133,22 +129,24 @@ def demux(video_path, output: Union[str, Path, SimpleQueue], key=0, audio_encryp
 			if finish_flag:
 				break
 
-		print(f'写入{video_path}完成')
+		logger.debug(f'writing {video_path} finished')
 		# check logic
 		for b in chunk_cache[1].values():
 			if b[1]:
-				breakpoint()
+				ValueError("there're some chunks in cache when reading finish")
 
 		# write cache to file
 		if stream_video:
 			stream_video.close()
-		logger.debug('开始写入音频')
+		logger.debug('start writing audio cache to file')
 		audios = write_file_from_cache(memory_cache[0], '.adx')
+		logger.debug('start writing video cache to file')
 		videos = write_file_from_cache(memory_cache[1], '.ivf')
 		videos[0] = stream_video_path
 		return videos, audios
 
 	def read_loop():
+		logger.info(f'start decrypt {video_path}')
 		buffer = None
 		threads = ()
 		input_queue = SimpleQueue() if key else None
@@ -171,13 +169,14 @@ def demux(video_path, output: Union[str, Path, SimpleQueue], key=0, audio_encryp
 		if buffer:
 			output_queue.put(buffer.index + 1)
 		else:
-			logger.debug('啥都没输出')
+			logger.debug('nothing to write')
 			output_queue.put(0)
-		print(f'{video_path}读取完成')
+		logger.debug(f'{video_path} read complete')
 		for i in range(len(threads)):
 			input_queue.put(None)
 		for i in threads:
 			i.result()
+		logger.info(f'{video_path} complete')
 
 	usm_file = FastUsmFile(video_path)
 	video_path = Path(video_path)
