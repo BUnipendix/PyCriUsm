@@ -204,12 +204,12 @@ cdef class FastUsmFile:
 				padding_size = _bswap_16(<uint16_t*>(header_array + 10))
 				pos += chunk_size + 8
 				data_type = (header_array[15]) & 3
-				#with gil:
+				with gil:
 				#	print(header_array[:sizeof(header_array)])
-				#	print("header信息：", chunk_size, data_offset[0], padding_size, pos)
+					print("header信息：", chunk_size, data_offset[0], padding_size, pos, data_type)
 				if data_type != 0:
-					# with gil:
-					# 	print('非流，跳过\n')
+					#with gil:
+					#	print('非流，跳过\n')
 					continue
 				if chunk_type[0] == 1447449408:
 					if enable_filter and filter_mode^_is_in_array(chno[0], _filter_video_chnos, filter_video_len):
@@ -264,7 +264,7 @@ cdef class UsmCrypter:
 
 		with nogil:
 			table2 = [85, 82, 85, 67]
-			tmp_key1 = key & <uint32_t>0xffffffff
+			tmp_key1 = key & (<uint32_t>0xffffffff)
 			tmp_key2 = key >> 32
 			key1 = <uint8_t*>&tmp_key1
 			key2 = <uint8_t*>&tmp_key2

@@ -3,7 +3,7 @@
 
 ``pip install dataclasses_json``
 
-Now just update some certain files and run main.py to update keys.py
+Now just update some certain files and run main.py to update keys.json
 
 ## For Editor
 If you want your game support decryption, please do as below:

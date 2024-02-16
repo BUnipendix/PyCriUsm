@@ -19,7 +19,7 @@ def _get_hsr_decrypt_key(video_name: str, version_key: int):
 	name_hash = 0
 	for i in video_name:
 		name_hash = (name_hash * 11 + i) & 0xffffffffffffffff
-	return (version_key + name_hash) % 72043514036987937
+	return ((version_key + name_hash) & 0xffffffffffffffff) % 72043514036987937
 
 
 def get_keys():
@@ -34,7 +34,7 @@ def get_keys():
 		data = data[0]
 		tmp_keys = {}
 		for i in data:
-			key1, key2 = i.values()
+			key1, key2 = map(int, i.values())
 			if key1 > 10000000:
 				if key2 not in tmp_keys:
 					tmp_keys[key2] = key1

@@ -13,7 +13,7 @@ def import_helper(path):
 		return
 	module = module_from_spec(spec)
 	spec.loader.exec_module(module)
-	return module.get_keys
+	return getattr(module, 'get_keys', None)
 
 
 def main():
